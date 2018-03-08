@@ -786,9 +786,10 @@ header {
   background-color: white;
   display: flex;
   align-items: center;
-  border-radius: 1px;
-  padding: 4px;
+  border-radius: 6px;
+  padding: 10px;
   border: 1px solid #b1b1b1;
+  width: 75%;
 }
 
 .global_search>* {
@@ -1141,11 +1142,14 @@ td>i, td:last-child>a {
   padding-right: 3px;
 }
 
-.title_document a {
+.title_document  a {
   line-height: 22px;
   padding-left: 26px;
   font-size: 8px;
 }
+
+
+
 
 .headers_table {
   border-bottom: 1px solid #ddd;
@@ -1223,8 +1227,20 @@ td>i, td:last-child>a {
   margin-bottom: 10px;
 }
 
-.item_document img {
-  height: 30px;
+.item_document2 {
+  display: block;
+  padding: 12px 20px;
+  border-radius: 6px;
+ /* background: #fff;*/
+  margin-bottom: 10px;
+}
+
+.item_document img {  
+  height: 40px;
+  margin-right: 10px;
+}
+.item_document2 img {
+  height: 40px;
   margin-right: 10px;
 }
 
@@ -1237,15 +1253,34 @@ td>i, td:last-child>a {
   text-overflow: ellipsis;
 }
 
+.item_document2 h3 {
+  color: #4A5364;
+  line-height: 20px;
+  max-width: calc(100% - 83px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+
 .title_document {
   width: 80%;
   display: inline-block;
+  padding-top: 10px;
 }
 
-.item_document h3, .item_document span {
+.title_document2 {
+  width: 80%;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.item_document h3, .item_document span, .item_document a {
   display: inline-block;
   vertical-align: middle;
 }
+
 
 .item_document span {
   margin-left: 10px;
@@ -1434,6 +1469,23 @@ td>i, td:last-child>a {
   margin-right: 10px;
 }
 
+ul{
+margin:0;
+padding:0;
+}
+
+ul li{
+display:block;
+float:left;
+padding:0 5px;
+}
+
+ul li a{
+color:#002854
+}
+
+
+
 @media (min-width: 1201px) and (max-width: 1280px) {
 
   .cj2 {
@@ -1514,8 +1566,17 @@ td>i, td:last-child>a {
 }
 
 .content_services {
-  background-color: #CACACA;
+  background-color: #CACACA00;
 }
+
+
+
+  .show{
+        display: none;
+  }
+  .hidden{
+        display: flex;
+  }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
   .col_informe {
@@ -1581,6 +1642,8 @@ td>i, td:last-child>a {
 #burguer-button i {
   color: #fff;
 }
+
+
 
 
 }
@@ -1794,7 +1857,7 @@ td>i, td:last-child>a {
     padding-top: 0
   }
   .title_document, .item_document h4 {
-    width: calc(100% - 40px)
+    width: calc(95% - 40px)
   }
   .slider_news h3 {
     font-size: 18px;
@@ -1803,13 +1866,14 @@ td>i, td:last-child>a {
   }
 
   .btnsincro{
-    left: 72vw;
-    top: 1vh;
+    left: 85vw;
+    top: 8vh;
   }
 
   .sincro{
     left: 80vw;
     font-size: 3vw;
+    display: none;
   }
 
   .item_document.item_mid {
@@ -1818,6 +1882,16 @@ td>i, td:last-child>a {
   .card .content_category{
     width: 160px;
   }
+  .item_document img{
+    padding-top: 10px;
+  }
+  .show{
+        display: flex;
+  }
+  .hidden{
+        display: none;
+  }
+
 
 
 }
